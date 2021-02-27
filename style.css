@@ -19,26 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
 /* Estilos Base */
 
 body {
@@ -96,14 +76,8 @@ header {
   margin-right: 2rem;
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
   .nav-list {
     margin: 0 1rem;
-  }
 }
 
 .nav-list a {
@@ -128,7 +102,7 @@ header {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.6), rgba(1, 16, 83, 0.1)),url('img/capa.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:cover;
   border:2px solid black;
 
 }
@@ -182,11 +156,6 @@ header {
   color: gray;
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -197,15 +166,10 @@ header {
   margin-bottom: 6rem;
 }
 
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
   .projects {
     grid-template-columns: 1fr;
   }
-}
+
 
 .agrad {
   text-align: center;
@@ -289,7 +253,7 @@ header {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 .div-icones {
-  width: max-content;
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 80px;
@@ -306,23 +270,15 @@ header {
 ul {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+  margin: auto;
+ 
 }
 .div-icones ul li {
   margin-top: 21rem;
+  margin-right: 60px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 10rem;
-  margin-left: 40px;
 }
-
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
-}
-
 .detalhes-contato:hover {
   transform: translateY(8px);
 }
@@ -336,10 +292,67 @@ footer {
   background: #3366cc;
   border-top: 4px solid gray;
 }
+ 
+/*media-query */
 
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 670px) {
+  header .nav-list{
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .nav-list a{
+    font-size: 15px;
+  }
+
+  .bemvindo h1{
+    margin-top: 14rem;
+    font-size: 6rem;
+    color: #054f77;
+  }
+  .bemvindo p{
+    font-size: 4rem;
+    color: antiquewhite;
+  }
+  .agrad {
+    padding-top: 10rem;
+  }
+  .agrad p{
+    padding-top: 30px;
+    margin-bottom: 45px;
+  }
+  .div-icones ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .div-icones ul li{
+    margin-top: 30%;
+  }
+  #certificados h2{
+    font-size: 25px;
+  }
+  .certif{
+    font-size: 14px;
+  }
+  .agrad p,h2{
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+
+}
+/* media query celulares */
+@media (max-width: 500px){
+ .nav-list a{
+    font-size: 12px;
+  }
+  .certif{
+    max-width: 300px;
+   justify-content: flex-start;
+   padding-bottom: 10px;
+  }
+  .origamid{
+    margin-top: 15px;
+  }
+
 }
