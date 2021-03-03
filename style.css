@@ -100,7 +100,7 @@ header {
       rgba(245, 246, 252, 0.6),
       rgba(1, 16, 83, 0.1)
     ),
-    url("img/capa.jpg");
+    url("img/backgound.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid black;
