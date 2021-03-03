@@ -9,8 +9,8 @@
 * {
   box-sizing: border-box;
 }
-body{
-  background-color: #3366cc;
+body {
+  background-color: #054f77;
 }
 
 html {
@@ -41,7 +41,6 @@ h1 {
   font-size: 6rem;
 }
 
-
 h2 {
   font-size: 4.2rem;
 }
@@ -55,7 +54,6 @@ a {
   color: whitesmoke;
 }
 
-
 /* nav */
 
 header {
@@ -66,9 +64,8 @@ header {
   width: 100%;
   background: #054f77;
   border: 2px solid gray;
-  z-index: 10;  /* para sobrepor toda a página quando rolar(incluindo a div onde fica cada projeto) */
+  z-index: 10; /* para sobrepor toda a página quando rolar(incluindo a div onde fica cada projeto) */
   position: fixed;
- 
 }
 
 .nav-list {
@@ -76,8 +73,8 @@ header {
   margin-right: 2rem;
 }
 
-  .nav-list {
-    margin: 0 1rem;
+.nav-list {
+  margin: 0 1rem;
 }
 
 .nav-list a {
@@ -91,20 +88,22 @@ header {
   color: #3366cc;
 }
 
-
 /* Seção Bem-vindo */
 
 .bemvindo {
-
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.6), rgba(1, 16, 83, 0.1)),url('img/capa.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.6),
+      rgba(1, 16, 83, 0.1)
+    ),
+    url("img/capa.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
-  border:2px solid black;
-
+  background-size: cover;
+  border: 2px solid black;
 }
 .bemvindo h1 {
   color: whitesmoke;
@@ -113,14 +112,13 @@ header {
 
 .bemvindo p {
   font-size: 5rem;
-  color:#054f77;
+  color: #054f77;
   text-align: center;
 }
 
 /* Projects section */
 
-
-.individual-project{
+.individual-project {
   max-width: 400px;
   margin: auto;
   justify-content: flex-start;
@@ -129,7 +127,7 @@ header {
   position: relative;
   z-index: -1;
 }
-.individual-project img{
+.individual-project img {
   max-width: 400px;
   height: 270px;
 }
@@ -138,7 +136,7 @@ header {
   text-align: center;
   margin: auto;
   padding: 10rem 2rem;
-  background-color: #3366cc;
+  background-color: #054f77;
   max-width: 80%;
 }
 
@@ -150,7 +148,7 @@ header {
 .project-title {
   font-size: 18px;
   padding: 2rem 0.5rem;
- text-align: center;
+  text-align: center;
 }
 .project-title:hover {
   color: gray;
@@ -166,10 +164,9 @@ header {
   margin-bottom: 6rem;
 }
 
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
+.projects {
+  grid-template-columns: 1fr;
+}
 
 .agrad {
   text-align: center;
@@ -180,7 +177,7 @@ header {
   color: black;
 }
 
-.captura{
+.captura {
   margin-top: 5px;
 }
 .column {
@@ -189,7 +186,7 @@ header {
 }
 #certificados {
   font-size: 38px;
-  background-color: #3366cc;
+  background-color: #054f77;
   height: auto;
   padding: 3rem;
 }
@@ -206,12 +203,11 @@ header {
   color: #693bb6;
 }
 .dio p:hover {
-  color:tomato;
+  color: tomato;
 }
 .alura p:hover {
-  color:cyan
+  color: cyan;
 }
-
 
 .certif {
   font-size: 20px;
@@ -223,27 +219,27 @@ header {
   margin-top: 20px;
   margin-bottom: 18px;
 }
-.alura, .origamid, .dio{
+.alura,
+.origamid,
+.dio {
   margin-bottom: 10px;
 }
-.hcode{
+.hcode {
   margin-bottom: 4px;
 }
-
 
 .certif img {
   max-width: 35px;
   margin-left: 20px;
 }
-.certif .img-distancia{
+.certif .img-distancia {
   margin-left: 8px;
   margin-top: -2px;
 }
-.certif .img-distancia-orig{
+.certif .img-distancia-orig {
   margin-left: 8px;
   margin-top: -2px;
 }
-
 
 /* Contact section */
 
@@ -272,7 +268,6 @@ ul {
   display: flex;
   flex-direction: row;
   margin: auto;
- 
 }
 .div-icones ul li {
   margin-top: 21rem;
@@ -293,67 +288,65 @@ footer {
   background: #3366cc;
   border-top: 4px solid gray;
 }
- 
+
 /*media-query */
 
 @media (max-width: 670px) {
-  header .nav-list{
+  header .nav-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .nav-list a{
+  .nav-list a {
     font-size: 15px;
   }
 
-  .bemvindo h1{
+  .bemvindo h1 {
     margin-top: 14rem;
     font-size: 6rem;
     color: #054f77;
   }
-  .bemvindo p{
+  .bemvindo p {
     font-size: 4rem;
     color: antiquewhite;
   }
   .agrad {
     padding-top: 10rem;
   }
-  .agrad p{
+  .agrad p {
     padding-top: 30px;
     margin-bottom: 45px;
   }
-  .div-icones ul{
+  .div-icones ul {
     display: flex;
     flex-direction: column;
   }
-  .div-icones ul li{
+  .div-icones ul li {
     margin-top: 30%;
   }
-  #certificados h2{
+  #certificados h2 {
     font-size: 25px;
   }
-  .certif{
+  .certif {
     font-size: 14px;
   }
-  .agrad p,h2{
+  .agrad p,
+  h2 {
     margin-bottom: 10px;
     padding: 5px;
   }
-
-
 }
 /* media query celulares */
-@media (max-width: 500px){
- .nav-list a{
+@media (max-width: 500px) {
+  .nav-list a {
     font-size: 12px;
   }
-  .certif{
+  .certif {
     max-width: 300px;
-   justify-content: flex-start;
-   padding-bottom: 10px;
+    justify-content: flex-start;
+    padding-bottom: 10px;
   }
-  .origamid{
+  .origamid {
     margin-top: 15px;
   }
-
 }
